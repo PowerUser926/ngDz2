@@ -1,0 +1,32 @@
+<section class="card mt-2 py-2 px-3 shadow">
+  <div class="skills">
+    <p class="mb-2 fw-bold">
+      Skills <span class="badge bg-success">{{ skills.length }}</span>
+    </p>
+    <div class="d-flex flex-wrap">
+      <span
+        class="bg-success rounded"
+        [ngClass]="{ skill: true }"
+        *ngFor="let skill of skills"
+        >{{ skill }}</span
+      >
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="certificates">
+    <p class="mb-2 fw-bold">
+      Certificates
+      <span class="badge bg-warning">{{ certificates.length }}</span>
+    </p>
+    <div class="d-flex flex-wrap">
+      <span
+        class="bg-warning rounded"
+        [ngClass]="{ certificate: true }"
+        *ngFor="let certificate of certificates"
+        >{{ certificate }}</span
+      >
+    </div>
+  </div>
+</section>

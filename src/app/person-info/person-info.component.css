@@ -1,0 +1,9 @@
+img {
+  width: 250px;
+}
+
+.person_info span {
+  display: inline-block;
+  width: 140px;
+  font-weight: bold;
+}

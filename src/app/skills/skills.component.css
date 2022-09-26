@@ -1,0 +1,23 @@
+.skill {
+  width: 90px;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.skill:not(:last-child) {
+  margin-right: 5px;
+}
+
+.certificate {
+  width: 110px;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.certificate:not(:last-child) {
+  margin-right: 5px;
+}

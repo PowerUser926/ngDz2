@@ -1,0 +1,12 @@
+<section class="card mt-2 py-2 px-3 shadow">
+  <p class="mb-2 fw-bold">
+    Work experience
+    <span class="badge bg-primary">{{ work_experience.length }}</span>
+  </p>
+
+  <ul class="ps-4">
+    <li *ngFor="let work of work_experience">
+      {{ work }}
+    </li>
+  </ul>
+</section>

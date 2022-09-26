@@ -1,0 +1,17 @@
+<section class="card mt-2 py-2 px-3 flex-row shadow">
+  <img [src]="person.photo" class="rounded" alt="photo" />
+
+  <div class="person_info ps-5 pt-2">
+    <p><span>First name:</span>{{ person.first_name | uppercase }}</p>
+    <p><span>Last name:</span>{{ person.last_name | uppercase }}</p>
+    <p>
+      <span>Date of Birth:</span>{{ person.birth_date | date: "dd.MM.yyyy" }}
+    </p>
+    <p><span>Phone:</span>{{ person.phone }}</p>
+    <p><span>Address:</span>{{ person.address }}</p>
+    <p>
+      <span>Desire salary:</span
+      >{{ person.salary | currency: "UAH":"symbol-narrow" }}
+    </p>
+  </div>
+</section>

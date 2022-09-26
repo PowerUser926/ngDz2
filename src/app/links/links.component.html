@@ -1,0 +1,8 @@
+<section class="card mt-2 py-2 px-3 shadow">
+  <p class="mb-2 fw-bold">Links</p>
+  <ul class="ps-2">
+    <li *ngFor="let link of links">
+      <a [href]="link.url" target="_blank">{{ link.title }}</a>
+    </li>
+  </ul>
+</section>
